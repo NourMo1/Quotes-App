@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Bootstarp Stylesheet -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="container py-5">
+        <div class="content py-5 text-center">
+            <h1 class="mb-5">Quote Of The Day</h1>
+            <p class="message d-block mb-4">Press the button below to recieve a random quote!</p>
+            <div class="pattern left-dots position-absolute"></div>
+            <div class="pattern right-dots position-absolute"></div>
+            <button class="my-btn rounded-pill mb-3 shadow-sm" onclick="getQuote()">New Quote</button>
+            <div class="quote-area">
+                <i class="fa-solid fa-quote-left"></i>
+                    <p class="mb-1" id="quote">A room without books is like a body without a soul.</p>
+                <i class="fa-solid fa-quote-right"></i>
+                <span class="d-block" id="author">― Marcus Tullius Cicero</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BS JS File -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- Main JS File -->
+    <script src="./JS/main.js"></script>
+</body>
+</html>
